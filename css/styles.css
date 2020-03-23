@@ -1,0 +1,173 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    margin-bottom: 14em;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgb(200, 227, 245);
+}
+
+/*---Containers-------
+===========================*/
+.contact-container {
+    border-bottom: 4px solid rgb(255, 255, 255) ;
+    padding-bottom: 15px;
+}
+
+ /*---Page Elements----------
+===========================*/
+
+.main-header {
+    text-align: center;
+    
+}
+
+h1 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(200, 227, 245);
+    padding: .7em 0;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 0;
+}
+.main-header p{
+    color: rgb(169, 178, 185);
+    border-bottom: 4px dashed rgb(255, 255, 255);
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin: 0px 25px;
+}
+
+h2 {
+    font-size: 18px;
+
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.input-items {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 5px 7px;
+    height: 3em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(200, 207, 212);
+}
+
+.input-items::placeholder {
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+#state {
+    color: rgb(255, 255, 255);
+}
+
+#zip {
+    max-width: 50%;
+    
+}
+
+.checkbox-news,
+.radio-format,
+.topic-container {
+    margin: 15px 0;
+    line-height: 30px;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 5em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(200, 207, 212);
+    resize: none;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(151, 155, 158);
+    font-size: 20px;
+    height: 3em;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+/*---Focus-------
+===========================*/
+
+.input-items:hover,
+textarea:hover {
+    background-color: white;
+    border: rgb(151, 155, 158);;
+}
+
+button:hover {
+    background-color: green;
+}
+
+/*---screen 768px-------
+===========================*/
+
+@media (min-width: 768px)  {
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main,
+.main-header p {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.label-items {
+    width: 30%;
+    margin-top: 1.3em;
+}
+
+.input-items {
+    width: 70%;
+}
+
+
+
+}
